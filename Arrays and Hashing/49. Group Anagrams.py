@@ -4,7 +4,7 @@ class Solution(object):
         :type strs: List[str]
         :rtype: List[List[str]]
         """
-        res = defaultdict(list)
+        res = defaultdict(list) # The reason I use deafult dict because when you try to access or a modify a key that's not present in deafult dict, a default value is used, in this case it's a list
 
         for s in strs:
             count = [0] * 26
